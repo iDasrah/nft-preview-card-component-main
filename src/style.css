@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    color: hsl(215, 51%, 70%);
+    padding: 20px;
+    font-size: 18px;
+    box-shadow: 0px 10px 11px 12px rgba(0, 0, 0, .3);
+}
+
+.card .nft-img {
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.card .nft-img .view {
+    display: none;
+    position: absolute;
+    top: 3.5%;
+    width: 290px;
+    background-color: hsla(178, 100%, 50%, 0.541);
+}
+
+.card .nft-img .view img {
+    transform: scale(-12%);
+}
+
+.card .nft-img:hover .view {
+    display: block;
+}
+
+.card .nft-img img,
+.card .nft-img .view {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.card .nft-name {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    padding-top: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.card .nft-description {
+    padding-top: 20px;
+}
+
+.card .sell-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0
+}
+
+.card .sell-info .price {
+    color: hsl(178, 100%, 50%);
+}
+
+.card .sell-info .price,
+.card .sell-info .time-left {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    padding-right: 5px;
+}
+
+.card .creator {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding: 15px 0 8px 0;
+}
+
+.card .creator .avatar {
+    width: 25px;
+    border: white 1px solid;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card .creator .creator-name {
+    color: hsl(0, 0%, 100%);
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.card .creator .creator-name:hover,
+.card .nft-name:hover {
+    color:hsl(178, 100%, 50%);
+}
